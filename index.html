@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=\">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="script.js" defer></script> 
+</head>
+<body>
+        <div class="container">
+            <header>
+                <h1><span>ROCK</span>
+                    <span>PAPER</span>
+                    <span>SCISSORS</span>
+                </h1>
+                <div class="score-container">
+                    <h4>SCORE</h4>
+                    <p id="score">0</p>
+                </div>
+            </header>
+
+         <main id="main">
+            <button class="btn-circle btn-paper pick" data-choice="paper">
+                <span class="wrapper">
+                    <img src="images/icon-paper.svg" alt=""/>
+                </span>
+            </button>
+            <button class="btn-circle btn-scissors pick" data-choice="scissors">
+                <span class="wrapper">
+                    <img src="images/icon-scissors.svg" alt=""/>
+                </span>
+            </button>
+            <button class="btn-circle btn-rock pick" data-choice="rock">
+                <span class="wrapper">
+                    <img src="images/icon-rock.svg" alt=""/>
+                </span>
+            </button>
+            </main>
+            
+            <div class="rules-model" id="model">
+                <img src="images/image-rules.svg" alt="rules">
+                <button id="close"><img src="images/icon-close.svg" alt=""></button>
+            </div>
+
+            <button class="btn-rules" id="open">Rules</button>
+        </div>
+
+        
+
+        <div class="selection" id="selection">
+            <div>
+                <h2>You picked</h2>
+                <button class="btn-circle btn-scissors" id="user_select">
+                    <span class="wrapper">
+                            <img src="./images/icon-scissors.svg" alt=""/>
+                    </span>
+                </button>
+            </div>
+            <div>
+                <p class="big"><span id="win">win</span></p>
+                <button class="btn" id="reset">Play again</button>
+            </div>
+            <div>
+                <h2>The House Picked</h2>
+                <button class="btn-circle btn-rock" id="computer_select">
+                    <span class="wrapper">
+                        <img src="./images/icon-rock.svg" alt=""/>
+                    </span>
+                </button>
+            </div>
+        </div>
+</body>
+</html>
